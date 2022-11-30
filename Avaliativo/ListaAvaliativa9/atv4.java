@@ -13,7 +13,7 @@ public class atv4 {
         nome.getChars(0,4,char4,0);
 
         for (int i = 0; i < char4.length; i++) {
-            System.out.print(" "+char4[i]);
+            System.out.print(char4[i]);
         }
 
     }

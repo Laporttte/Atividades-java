@@ -18,5 +18,6 @@ public class atv13 {
                 mat2 [i][j] = sc.nextInt();
             }
         }
+        sc.close();
     }
 }

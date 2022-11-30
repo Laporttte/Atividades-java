@@ -13,7 +13,7 @@ public class atv6 {
         System.out.print("idade: ");
         idade = sc.nextInt();
             sc.close();
-
+        System.out.println(nome+", resultado: ");
         if((idade <25)&(sexo.toUpperCase().charAt(0)=='F')) {
             System.out.println("ACEITA");
         } else {

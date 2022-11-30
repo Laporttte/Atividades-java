@@ -11,13 +11,14 @@ public class atv7 {
         frase2 = sc.nextLine();
             sc.close();
 
+        comparaString(frase1, frase2);
+
+    }
+    public static void comparaString(String frase1, String frase2)  {
         if (frase1.equals(frase2))   {
             System.out.println("São iguais!");
         } else {
             System.out.println("Não são iguais!");
-
         }
-    
     }
-
 }
