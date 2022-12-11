@@ -52,7 +52,7 @@ public class atv2 {
                     String caracter = sc.next();
                 s1 = s1.replace(caracter, ".");
                 for (int i = 0; i < s1.length(); i++) {
-                    if(s1.charAt(i)==".") {
+                    if(s1.charAt(i)=='.') {
                         cont++;
                     }
                 }
@@ -66,7 +66,7 @@ public class atv2 {
                 System.out.println("C2");
                     c2 = sc.next().charAt(0);
                 int pos = s1.indexOf(c1);
-                    char [] ch = s1.toCharArray;
+                    char [] ch = s1.toCharArray();
                     ch[pos] = c2;
                     s1 = String.valueOf(ch);
                 System.out.println(s1);

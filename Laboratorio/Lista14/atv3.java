@@ -5,7 +5,6 @@ public class atv3 {
         Scanner sc = new Scanner(System.in);
         String dd = "vazio", mm = "vazio", yyyy = "vazio";
         String data, dataTemp;
-        String numeros = "0123456789";
         int posBarra;
 
         System.out.print("Digite a data (dd/mm/yyyy): ");
