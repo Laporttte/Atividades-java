@@ -1,3 +1,5 @@
+package Avaliativo.ListaAvaliativa10;
+
 import java.io.*;
 import java.util.*;
 //verificar se tem, se nao tiver, criar ->
@@ -10,8 +12,7 @@ public class atv1 {
 
         String fraseUsuario;
         Boolean termino = false;
-
-        File arq = new File ("c:\\Avaliativo\\ListaAvaliativa10\\atv1.txt");
+        File arq = new File ("Avaliativo\\ListaAvaliativa10\\arq.txt");
             
             if(!arq.isFile())    {
                 System.out.println("O arquivo foi criado, pois não existia um.");
@@ -19,22 +20,28 @@ public class atv1 {
                 System.out.println("O arquivo já existia.");            
             }
             FileWriter escritor = new FileWriter(arq,true);
-            
 
         while (termino == false)    {
             fraseUsuario = sc.nextLine();
                 if (fraseUsuario.contains("0")) {
                     termino = true;
+                } else {
+                    escritor.write(fraseUsuario);
                 }
-            escritor.write(fraseUsuario);
         }
             sc.close();
             escritor.close();
 
-
         FileReader leitor = new FileReader(arq);
-            System.out.print(leitor.read());
+        int buffEr=0;
+        while(buffEr!=-1) {
+            char carac;
+            int tam=0;
+             carac = (char) leitor.read();
+             System.out.println(carac);
+             buffEr = leitor.read();
+             leitor.skip(tam);
+        }
             leitor.close();
-
     }
 }

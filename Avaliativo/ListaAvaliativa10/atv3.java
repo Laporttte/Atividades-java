@@ -1,29 +1,35 @@
 package Avaliativo.ListaAvaliativa10;
 import java.io.*;
-public class atv2 {
+public class atv3 {
     public static void main(String[] args)  throws IOException  {
         File arq = new File ("Avaliativo\\ListaAvaliativa10\\arq.txt");
 
         if (arq.exists()) {
-            System.out.println("Arquivo existe e possui "+contalinhas(arq));
+            System.out.println("Arquivo existe e possui "+contaVogais(arq) + " vogais");
+        } else {
+            System.out.println("O arq não existe.");
         }
     }
-    public static int contalinhas(File arq) throws IOException {
-        int total=0;
+    public static int contaVogais(File arq) throws IOException {
+        int vogais=0;
         try {
             FileReader leitor = new FileReader (arq);
             BufferedReader bufferedReader = new BufferedReader(leitor);
             String linha = "";
             while ( ( linha = bufferedReader.readLine() ) != null) {
-                System.out.println(linha);
-                total++;
+                for (int i = 0; i < linha.length(); i++) {
+                    char caracter=linha.charAt(i);
+                    if(caracter=='a'||caracter=='e'||caracter=='i'||caracter=='o'||caracter=='u') {
+                        System.out.println(caracter);
+                        vogais++;
+                    }
+                }
             }
                 leitor.close();
                 bufferedReader.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        return total;
+        return vogais;
     }
-    
 }

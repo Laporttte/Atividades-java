@@ -86,6 +86,7 @@ public class atv2 {
                 System.out.println("Tamanho da substring: ");
                    int tam = sc.nextInt();
                 String substring = s1.substring(posIn, tam+posIn);
+                System.out.println(substring);
             break;
             default:
             System.out.println("Opção incorreta ");
