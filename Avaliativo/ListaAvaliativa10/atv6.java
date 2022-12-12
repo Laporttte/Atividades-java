@@ -32,17 +32,20 @@ public class atv6 {
                 e.printStackTrace();
         }
         for (int i = 0; i < alfabeto.length(); i++) {
+            cont=0;
             for (int j = 0; j < textoTemp.length(); j++) {
+                alfaQnt [i][0] = String.valueOf((alfabeto.charAt(i)));
                 if(textoTemp.charAt(j)==alfabeto.charAt(i)) { //se for, imprime letra e quant;
                         cont++;
             }
-            System.out.print(alfabeto.charAt(i));
-            System.out.print(" ");
-            System.out.print(cont);
-            cont=0;
-
-
+            alfaQnt [i][1] = String.valueOf(cont);
+            }
         }
-    }
+        for (int i = 0; i < alfaQnt.length; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(alfaQnt [i][j]+" ");
+            }
+            System.out.print("\n");
+        }
 }
 }

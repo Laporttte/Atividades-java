@@ -1,3 +1,5 @@
+package Laboratorio.Lista14;
+
 import java.util.*;
 public class atv3nw {
     public static void main(String[] args) {
