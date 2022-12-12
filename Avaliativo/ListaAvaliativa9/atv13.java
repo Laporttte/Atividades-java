@@ -4,17 +4,16 @@ public class atv13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         String word;
-        word = sc.nextLine();
-        char [] word2 = word.toCharArray();
-        char [] word3 = word2;
-        for (int i = 0; i < word2.length; i++) {
-            if(word2[i]!=' ') {
-                word3[i] = word2[i];
+        int cont=0;
+        System.out.println("Digite a frase: ");
+            word = sc.nextLine();
+
+        for (int i = 0; i < word.length(); i++) {
+            if(word.charAt(i)==' ') {
+                cont++;
             }
         }
         sc.close();
-        for (int i = 0; i < word3.length; i++) {
-            System.out.print(word3[i]);
-        }
+        System.out.println("Tem "+cont+" espaços em branco.");
     }
 }
