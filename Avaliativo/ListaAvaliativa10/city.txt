@@ -1,0 +1,4 @@
+brasil 1
+europa 5
+fransico 99999999
+sao germa 231231

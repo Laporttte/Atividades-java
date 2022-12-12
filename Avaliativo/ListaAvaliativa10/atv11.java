@@ -61,7 +61,6 @@ public class atv11 {
             }
         System.out.println("Existem "+qntLinhas+" linhas no arq.");
         System.out.println("Existem "+texto.length()+" caracteres no arq.");
-
         System.out.println("Existem "+qntPalavras+" palavras no arq.");
 
 
