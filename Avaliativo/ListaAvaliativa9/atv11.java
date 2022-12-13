@@ -10,14 +10,13 @@ public class atv11 {
             sc.close();
             frase = frase.toLowerCase();
 
-        char [] fraseVetor = frase.toCharArray();
-        char [] vogais = {'a','e','i','o','u'};
+        String vogais = "aeiou";
 
-        for (int i = 0; i < fraseVetor.length; i++) {
-            for (int j = 0; j < vogais.length; j++) {
-                if (fraseVetor[i]!=vogais[j])   {
-                    if (j==vogais.length-1)  {
-                        System.out.print(fraseVetor[i]);
+        for (int i = 0; i < frase.length(); i++) {
+            for (int j = 0; j < vogais.length(); j++) {
+                if (frase.charAt(i)!=vogais.charAt(j))   {
+                    if (j==vogais.length()-1)  {
+                        System.out.print(frase.charAt(i));
                     }
                 } else {
                     break;

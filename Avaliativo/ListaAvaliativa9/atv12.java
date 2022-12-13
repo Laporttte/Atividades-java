@@ -5,7 +5,7 @@ public class atv12 {
         Scanner sc = new Scanner (System.in);
         String palavra = new String();
         int qtnVogais=0;
-        char [] vogais = {'a','e','i','o','u'};
+        String vogais = "aeiou";
         char caracter;
 
         System.out.print("Digite a palavra: ");
@@ -15,8 +15,8 @@ public class atv12 {
             caracter = sc.next().charAt(0);
 
         for (int i = 0; i < palavra.length(); i++) {
-            for (int j = 0; j < vogais.length; j++) {
-                if(palavra.charAt(i)==vogais[j])    {
+            for (int j = 0; j < vogais.length(); j++) {
+                if(palavra.charAt(i)==vogais.charAt(j))    {
                     qtnVogais++;
                     palavra = palavra.replace(palavra.charAt(i), caracter);
                 }    
